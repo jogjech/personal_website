@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Kevin's reaction game</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/kevin.png">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+h2 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -35px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -30px;
+}
+
+#disp {
+    font-size: 0.8em;
+    position: relative;
+    top: -30px;
+}
+
+#box {
+    width: 200px;
+    height: 200px;
+    display: none;
+    position: relative;
+}
+
+#zack {
+    display: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#zack img {
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#buttons {
+    margin: 0;
+    position: relative;
+    top: -35px;
+    margin-bottom: -65px;
+}
+
+#board1 {
+    display: none;
+    position: relative;
+    top: -40px;
+    margin-bottom: -20px;
+}
+
+#board2 {
+    display: none;
+    position: relative;
+    top: -40px;
+    margin-bottom: -20px;
+}
+
+#counter {
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 0;
+    right: 23px;
+    color: #031634;
+}
+</style>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Kangxu's Web Home</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Main Page</a></li>
+                    <li class="active"><a href="reactionGame.html">Reaction Game</a></li>
+                    <li><a href="webShop.html">Kevin's Web Shop</a></li>
+                </ul>
+            </div>
+            <!--/.navbar-collapse -->
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-md-12">
+                <h2>Test your reactions!</h2>
+                <div class="break"></div>
+                <h3>Click on the boxes and circles as quickly as you can! </h3>
+                <p><span id="disp">Mode 1: Get smaller time in fixed number of blocks. Mode 2: Get more blocks in fixed time. Mode Zack: Hit Zack.</span></p>
+                <p class="bold" id="board1">Your time: <span id="time">0</span>s Best time: <span id="bestTime">N/A</span> Block left: <span id="blockLeft">10</span></p>
+                <p class="bold" id="board2">Time left: <span id="timeLeft">10</span>s Block number: <span id="blockNum">0</span></p>
+                <div class="container theme-showcase" role="main" id="buttons">
+                    <button type="button" class="btn btn-lg btn-primary" id="start1">Mode 1</button>
+                    <button type="button" class="btn btn-lg btn-success" id="start2">Mode 2</button>
+                    <button type="button" class="btn btn-lg btn-info" id="start3">Mode Zack</button>
+                    <button type="button" class="btn btn-lg btn-default" id="goBack" onclick="location.href='index.html'">Go Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="box"></div>
+    <div id="zack"><img id="zackImg" src="images/zack.png"></div>
+    <script type="text/javascript" src="reactionGame.js"></script>
+    <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/docs.min.js"></script>
+</body>
+
+</html>
