@@ -1,4 +1,4 @@
-## Kevin's Personal Website
+# Kevin's Personal Website
 Initial template is based on Start Bootstrap website.
 
 ## Copyright and License
